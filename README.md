@@ -5,9 +5,13 @@
 SEKUYA is a serif all-uppercase typeface that give a strong impression to your design. The main goal was to bring a boldness and modern feel
 to serif font by reworking the curves also corners and balance of modern serif font families. This font is a great choice for main text / 
 header text on a website or layout design. SEKUYA font originally created for SEKUYA game that has anime epic fantasy vibes. The font is free
-for all to use. Learn more: <sekuya.io>
+for all to use. Learn more: [(sekuya.io)]
 
-[Sample Image](
+[Sample Image](documentation/SEKUYA1.jpg)
+[Sample Image](documentation/SEKUYA2.jpg)
+[Sample Image](documentation/SEKUYA3.jpg)
+[Sample Image](documentation/SEKUYA4.jpg)
+
 ----
 
 ## License
