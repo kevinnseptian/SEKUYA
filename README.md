@@ -14,13 +14,15 @@ for all to use. Learn more: [sekuya.io](https://sekuya.io/)
 
 ----
 
+## About
+
+Sekuya is a gaming and entertainment company with community collaboration centric approach. Sekuya exists to inspire dreams with passion
+bringing epic fantasy adventure for everyone.
+
 ## License
 
 SEKUYA is licensed under SIL Open Font License V1.1, read [here](https://github.com/kevinnseptian/SEKUYA/blob/main/OFL.txt).
 
-## ChangeLog
+## Repository Layout
 
-When you make modifications, be sure to add a description of your changes, following the format of the other entries, to the start of this section.
-
-## Acknowledgements
-
+This font repository structure is inspired by [Unified Font Repository](https://github.com/unified-font-repository/Unified-Font-Repository) v0.3, modified for the Google Fonts workflow.
