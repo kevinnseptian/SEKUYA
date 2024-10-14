@@ -1,3 +1,9 @@
+----
+
+## Setting up your font
+
+### New repositories
+
 ## License
 
 SEKUYA is licensed under SIL Open Font License V1.1, read [here](https://github.com/kevinnseptian/SEKUYA/blob/main/OFL.txt).
