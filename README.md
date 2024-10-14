@@ -7,10 +7,10 @@ to serif font by reworking the curves also corners and balance of modern serif f
 header text on a website or layout design. SEKUYA font originally created for SEKUYA game that has anime epic fantasy vibes. The font is free
 for all to use. Learn more: [(sekuya.io)]
 
-!(documentation/SEKUYA_1.jpg)
-!(documentation/SEKUYA_2.jpg)
-!(documentation/SEKUYA_3.jpg)
-!(documentation/SEKUYA_4.jpg)
+![documentation/SEKUYA_1.jpg]
+![documentation/SEKUYA_2.jpg]
+![documentation/SEKUYA_3.jpg]
+![documentation/SEKUYA_4.jpg]
 
 ----
 
