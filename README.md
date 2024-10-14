@@ -2,6 +2,9 @@
 
 SEKUYA is licensed under SIL Open Font License V1.1, read [here](https://github.com/kevinnseptian/SEKUYA/blob/main/OFL.txt).
 
-## Repository Layout
+## ChangeLog
 
-This font repository structure is inspired by [Unified Font Repository v0.3](https://github.com/unified-font-repository/Unified-Font-Repository), modified for the Google Fonts workflow.
+When you make modifications, be sure to add a description of your changes, following the format of the other entries, to the start of this section.
+
+## Acknowledgements
+
