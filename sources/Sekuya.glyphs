@@ -11,7 +11,6 @@ value = (
 {
 name = fsType;
 value = (
-2
 );
 },
 {
@@ -33,6 +32,11 @@ automatic = 1;
 code = "languagesystem DFLT dflt;
 
 languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
 languagesystem latn ROM;
 languagesystem latn MOL;
 languagesystem latn CAT;
@@ -811,7 +815,6 @@ lookup kernHorizontalKerninglookup0 {
     pos \\numbersign \\plusminus -15;
     pos \\numbersign \\degree -10;
     pos \\numbersign \\registered -33;
-    pos \\numbersign \\softhyphen -64;
     pos \\numbersign \\logicalnot -15;
     pos \\numbersign \\guillemetleft -115;
     pos \\numbersign \\ordfeminine -8;
@@ -1134,7 +1137,6 @@ lookup kernHorizontalKerninglookup0 {
     pos \\dollar \\degree -39;
     pos \\dollar \\macron -39;
     pos \\dollar \\registered -12;
-    pos \\dollar \\softhyphen -3;
     pos \\dollar \\logicalnot -21;
     pos \\dollar \\guillemetleft -11;
     pos \\dollar \\ordfeminine -39;
@@ -1732,7 +1734,6 @@ lookup kernHorizontalKerninglookup0 {
     pos \\ampersand \\degree -336;
     pos \\ampersand \\macron -330;
     pos \\ampersand \\registered -148;
-    pos \\ampersand \\softhyphen -94;
     pos \\ampersand \\logicalnot -147;
     pos \\ampersand \\guillemetleft -147;
     pos \\ampersand \\ordfeminine -336;
@@ -2279,7 +2280,6 @@ lookup kernHorizontalKerninglookup0 {
     pos \\parenleft \\degree -33;
     pos \\parenleft \\macron -15;
     pos \\parenleft \\registered -91;
-    pos \\parenleft \\softhyphen -78;
     pos \\parenleft \\logicalnot -78;
     pos \\parenleft \\guillemetleft -88;
     pos \\parenleft \\ordfeminine -33;
@@ -84832,7 +84832,8 @@ lookup kernHorizontalKerninglookup0 {
 table GDEF {
   GlyphClassDef @GDEF_Simple, , , ;
 
-} GDEF;";
+} GDEF;
+";
 name = Prefix;
 }
 );
@@ -84843,6 +84844,7 @@ code = "feature locl;
 feature sups;
 feature frac;
 feature ordn;
+feature case;
 ";
 tag = aalt;
 },
@@ -84858,28 +84860,61 @@ code = " script DFLT;
  script latn;
      language dflt ;
       lookup kernHorizontalKerninglookup0;";
-disabled = 1;
 tag = kern;
 },
 {
 automatic = 1;
+code = "lookup ccmp_DFLT_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_DFLT_1;
+
+lookup ccmp_latn_1 {
+	lookupflag 0;
+	sub Ldot by L periodcentered.loclCAT.case;
+	sub ldot by l periodcentered.loclCAT;
+} ccmp_latn_1;
+
+script latn;
+lookup ccmp_latn_1;
+";
+tag = ccmp;
+},
+{
+automatic = 1;
 code = "script latn;
-language ROM;
+language AZE;
 lookup locl_latn_0 {
+	sub i by idotaccent;
+} locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
+
+script latn;
+language ROM;
+lookup locl_latn_1 {
 	sub Scedilla by Scommaaccent;
 	sub scedilla by scommaaccent;
 	sub Tcedilla by Tcommaaccent;
 	sub tcedilla by tcommaaccent;
-} locl_latn_0;
+} locl_latn_1;
 language MOL;
-lookup locl_latn_0;
+lookup locl_latn_1;
 
 script latn;
 language CAT;
-lookup locl_latn_1 {
-	sub  l' periodcentered' l by ldot;
-	sub  L' periodcentered' L by Ldot;
-} locl_latn_1;
+lookup locl_latn_2 {
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+} locl_latn_2;
 ";
 tag = locl;
 },
@@ -84905,6 +84940,12 @@ code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfem
 sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
 ";
 tag = ordn;
+},
+{
+automatic = 1;
+code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;
+";
+tag = case;
 }
 );
 fontMaster = (
@@ -84916,7 +84957,7 @@ value = 1000;
 },
 {
 name = typoDescender;
-value = -290;
+value = -300;
 },
 {
 name = typoLineGap;
@@ -84928,7 +84969,7 @@ value = 1000;
 },
 {
 name = hheaDescender;
-value = -250;
+value = -300;
 },
 {
 name = hheaLineGap;
@@ -84936,7 +84977,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 853;
+value = 971;
 },
 {
 name = winDescent;
@@ -89690,7 +89731,7 @@ unicode = 73;
 {
 color = 10;
 glyphname = IJ;
-lastChange = "2025-11-13 14:46:18 +0000";
+lastChange = "2025-11-14 13:53:03 +0000";
 layers = (
 {
 background = {
@@ -89764,6 +89805,9 @@ ref = I;
 },
 {
 alignment = -1;
+attr = {
+identifier = 5C4182F3;
+};
 pos = (408,0);
 ref = J;
 }
@@ -104361,9 +104405,19 @@ unicode = 106;
 {
 color = 6;
 glyphname = jdotless;
-lastChange = "2025-11-13 14:47:15 +0000";
+lastChange = "2025-11-14 14:22:03 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (301,-250);
+},
+{
+name = top;
+pos = (392,700);
+}
+);
 layerId = m001;
 shapes = (
 {
@@ -104378,7 +104432,7 @@ unicode = 567;
 {
 color = 10;
 glyphname = jcircumflex;
-lastChange = "2025-11-13 14:46:18 +0000";
+lastChange = "2025-11-14 14:22:05 +0000";
 layers = (
 {
 background = {
@@ -104465,7 +104519,7 @@ shapes = (
 ref = jdotless;
 },
 {
-pos = (177,0);
+pos = (183,0);
 ref = circumflexcomb;
 }
 );
@@ -105067,7 +105121,7 @@ unicode = 316;
 {
 color = 10;
 glyphname = ldot;
-lastChange = "2025-11-13 14:46:18 +0000";
+lastChange = "2025-11-14 13:51:59 +0000";
 layers = (
 {
 background = {
@@ -105120,10 +105174,7 @@ nodes = (
 layerId = m001;
 shapes = (
 {
-ref = l;
-},
-{
-ref = periodcentered.loclCAT;
+ref = Ldot;
 }
 );
 width = 817;
@@ -114566,11 +114617,31 @@ unicode = 160;
 {
 color = 6;
 glyphname = .notdef;
-lastChange = "2025-11-13 15:00:26 +0000";
+lastChange = "2025-11-14 14:19:44 +0000";
 layers = (
 {
 layerId = m001;
-width = 50;
+shapes = (
+{
+closed = 1;
+nodes = (
+(701,0,l),
+(701,700,l),
+(25,700,l),
+(25,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(181,562,l),
+(545,562,l),
+(545,138,l),
+(181,138,l)
+);
+}
+);
+width = 726;
 }
 );
 },
@@ -114651,6 +114722,28 @@ width = 390;
 }
 );
 unicode = 45;
+},
+{
+glyphname = softhyphen;
+lastChange = "2025-11-14 14:00:21 +0000";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(365,179,l),
+(365,306,l),
+(25,306,l),
+(25,179,l)
+);
+}
+);
+width = 390;
+}
+);
+unicode = 173;
 },
 {
 color = 6;

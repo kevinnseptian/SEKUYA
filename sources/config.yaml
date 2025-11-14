@@ -1,5 +1,4 @@
 sources:
-  - SEKUYA.ufo
-familyName: "SEKUYA"
-buildOTF: false
-includeSourceFixes: true
+  - Sekuya.glyphs
+familyName: "Sekuya"
+cleanUp: true
