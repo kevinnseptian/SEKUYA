@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Tbar" format="2">
+  <advance width="890"/>
+  <unicode hex="0166"/>
+  <outline>
+    <contour>
+      <point x="160" y="203" type="line"/>
+      <point x="734" y="203" type="line"/>
+      <point x="734" y="376" type="line"/>
+      <point x="160" y="376" type="line"/>
+    </contour>
+    <component base="T"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2025-11-13 14:46:18 +0000</string>
+      <key>public.markColor</key>
+      <string>0.97,0.9,0,1</string>
+    </dict>
+  </lib>
+</glyph>
