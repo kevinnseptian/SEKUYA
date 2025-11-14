@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hbar" format="2">
+  <advance width="1095"/>
+  <unicode hex="0126"/>
+  <outline>
+    <contour>
+      <point x="0" y="482" type="line"/>
+      <point x="1095" y="482" type="line"/>
+      <point x="1095" y="648" type="line"/>
+      <point x="0" y="648" type="line"/>
+    </contour>
+    <component base="H" xOffset="29"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2025-11-13 14:46:18 +0000</string>
+      <key>public.markColor</key>
+      <string>0.97,0.9,0,1</string>
+    </dict>
+  </lib>
+</glyph>

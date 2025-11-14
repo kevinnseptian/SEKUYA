@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dollar" format="2">
+  <advance width="688"/>
+  <unicode hex="0024"/>
+  <anchor x="330.282" y="47" name="bottom"/>
+  <anchor x="330.282" y="668.179" name="top"/>
+  <outline>
+    <contour>
+      <point x="315" y="805" type="line"/>
+      <point x="315" y="695" type="line"/>
+      <point x="159" y="681"/>
+      <point x="20" y="621"/>
+      <point x="20" y="463" type="curve" smooth="yes"/>
+      <point x="20" y="362"/>
+      <point x="85" y="313"/>
+      <point x="182" y="277" type="curve" smooth="yes"/>
+      <point x="368" y="215" type="line" smooth="yes"/>
+      <point x="392" y="208"/>
+      <point x="422" y="198"/>
+      <point x="422" y="176" type="curve" smooth="yes"/>
+      <point x="422" y="148"/>
+      <point x="386" y="138"/>
+      <point x="349" y="138" type="curve" smooth="yes"/>
+      <point x="242" y="138"/>
+      <point x="137" y="172"/>
+      <point x="33" y="238" type="curve"/>
+      <point x="33" y="46" type="line"/>
+      <point x="118" y="19"/>
+      <point x="211" y="4"/>
+      <point x="315" y="3" type="curve"/>
+      <point x="315" y="-99" type="line"/>
+      <point x="410" y="-99" type="line"/>
+      <point x="410" y="7" type="line"/>
+      <point x="567" y="25"/>
+      <point x="678" y="98"/>
+      <point x="678" y="240" type="curve" smooth="yes"/>
+      <point x="678" y="373"/>
+      <point x="539" y="413"/>
+      <point x="451" y="437" type="curve" smooth="yes"/>
+      <point x="345" y="465"/>
+      <point x="295" y="480"/>
+      <point x="295" y="518" type="curve" smooth="yes"/>
+      <point x="295" y="555"/>
+      <point x="339" y="557"/>
+      <point x="376" y="557" type="curve" smooth="yes"/>
+      <point x="474" y="557"/>
+      <point x="559" y="527"/>
+      <point x="636" y="467" type="curve"/>
+      <point x="636" y="658" type="line"/>
+      <point x="575" y="683"/>
+      <point x="498" y="696"/>
+      <point x="410" y="698" type="curve"/>
+      <point x="410" y="805" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2025-11-13 15:27:53 +0000</string>
+      <key>public.markColor</key>
+      <string>0.06,0.6,0.98,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="bracketleft" format="2">
+  <advance width="295"/>
+  <unicode hex="005B"/>
+  <outline>
+    <contour>
+      <point x="25" y="-85" type="line"/>
+      <point x="270" y="-85" type="line"/>
+      <point x="270" y="12" type="line"/>
+      <point x="135" y="12" type="line"/>
+      <point x="135" y="645" type="line"/>
+      <point x="270" y="645" type="line"/>
+      <point x="270" y="740" type="line"/>
+      <point x="25" y="740" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2025-11-13 15:15:19 +0000</string>
+      <key>public.markColor</key>
+      <string>0.06,0.6,0.98,1</string>
+    </dict>
+  </lib>
+</glyph>
