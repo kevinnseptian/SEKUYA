@@ -114647,17 +114647,6 @@ width = 726;
 },
 {
 color = 6;
-glyphname = .null;
-lastChange = "2025-11-13 15:00:26 +0000";
-layers = (
-{
-layerId = m001;
-width = 50;
-}
-);
-},
-{
-color = 6;
 glyphname = CR;
 lastChange = "2025-11-13 15:00:26 +0000";
 layers = (
@@ -114669,15 +114658,26 @@ width = 50;
 unicode = 13;
 },
 {
-color = 6;
-glyphname = NULL;
-lastChange = "2025-11-13 15:00:26 +0000";
+glyphname = lineseparator;
+lastChange = "2025-11-14 14:28:28 +0000";
 layers = (
 {
 layerId = m001;
-width = 50;
+width = 600;
 }
 );
+unicode = 8232;
+},
+{
+glyphname = paragraphseparator;
+lastChange = "2025-11-14 14:28:28 +0000";
+layers = (
+{
+layerId = m001;
+width = 600;
+}
+);
+unicode = 8233;
 },
 {
 color = 6;
